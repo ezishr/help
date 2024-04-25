@@ -1,7 +1,7 @@
 html {
     height: 100%;
     width: 100%;
-  }
+}
   
   /*
     Add style rules for the body of a your webpage.
@@ -32,7 +32,6 @@ html {
   }
   
   
-  
   /*
     Style Text: Add style rules for any headings (h1-6),
     paragraphs and links
@@ -51,7 +50,6 @@ html {
     /* Adjust margin bottom as needed */
   }
   
-  }
   
   h2 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -59,7 +57,6 @@ html {
     color: #333;
     margin-top: 20px;
     margin-bottom: 10px;
-    */
   }
   
   h3 {
@@ -93,34 +90,34 @@ html {
   
   /* CSS ruleset for visited links */
   a:visited {
-    color: #purple;
+    color: purple;
+  }
   
     /* CSS ruleset for hovered links */
-    a:hover {
-      text-decoration: underline;
-      color: #0056b3;
-    }
+  a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
   
-    /* CSS ruleset for active links */
-    a:active {
-      color: #0056b3;
-    }
+  /* CSS ruleset for active links */
+  a:active {
+    color: #0056b3;
+  }
   
   
   
-    /*
+  /*
     Style Lists: Styles added to the ol or ul style rulesets affect the entire
     list, while styles added to the li style ruleset affect individual list items
   */
   
   
-    ol {}
+    /* ol {} */
   
-    ol li {}
+    /* ol li {} */
   
     .navbar ul {
       list-style-type: none;
-      */ overflow: hidden;
       position: fixed;
       top: 0;
       width: 100%;
@@ -146,7 +143,7 @@ html {
       color: #007bff;
     }
   
-    /*
+  /*
     Style Buttons: Add style rules for any headings (h1-6),
     paragraphs and links
   */
@@ -204,7 +201,7 @@ html {
     /* Example: This styles elements with class="header"*/
     .header-container {
   
-      background-color: #333;
+      background-color: lightblue;
       color: white;
       display: flex;
       flex-direction: row;
@@ -290,7 +287,6 @@ html {
       font-weight: bold;
     }
   
-    .navbar a,
     .navbar button {
       color: black;
       text-decoration: none;
@@ -311,13 +307,13 @@ html {
   
   
     /* Style rules for flex-item 1 */
-    .flex-item:nth-of-type(1) {}
+    /* .flex-item:nth-of-type(1) {} */
   
     /* Style rules for flex-item 2 */
-    .flex-item:nth-of-type(2) {}
+    /* .flex-item:nth-of-type(2) {} */
   
     /* Style rules for flex-item 3 */
-    .flex-item:nth-of-type(3) {}
+    /* .flex-item:nth-of-type(3) {} */
   
   
     /* Style set for all flex-items */
