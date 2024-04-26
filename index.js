@@ -10,7 +10,6 @@ themeButton.addEventListener("click", toggleDarkMode);
 // Add your query for the sign now button here
 const signNowButton = document.getElementById("sign-now-button");
 
-
 let count = 3; // Starting count
 const updateCounter = () => {
     count += 1; // Increment count
@@ -18,19 +17,19 @@ const updateCounter = () => {
     if (counterElement) {
         counterElement.textContent = `🖊️ ${count} people have signed this petition and support this cause.`;
     }
-}
+};
 
 
-let form = document.querySelector("#sign-petition")
+let form = document.querySelector("#sign-petition");
 // Validate Form Functionality
 const validateForm = () => {
     let containsErrors = false;
     const petitionInputs = document.getElementById("sign-petition").elements;
-
     const emailRegex = /\S+@\S+\.\S+/;
 
     for (let i = 0; i < petitionInputs.length; i++) {
-        if (petitionInputs[i].value.trim.length < 2) {
+        let value = petitionInputs[i].value;
+        if (value.trim().length < 2) {
             containsErrors = true;
             petitionInputs[i].classList.add('error');
         } else {
@@ -38,7 +37,7 @@ const validateForm = () => {
         }
 
         if (petitionInputs[i].id === "email") {
-            if (!emailRegex.test(petitionInputs[i].value)) {
+            if (!emailRegex.test(value.trim())) {
                 containsErrors = true;
                 petitionInputs[i].classList.add('error');
             } else {
@@ -61,7 +60,7 @@ const addSignature = (event) => {
     
     if(isValid) {
         const newSignature = document.createElement("p");
-        newSignature.textContent = `${name} from ${hometown}`;
+        newSignature.textContent = `🖊️ ${name} from ${hometown} support this.`;
     
         const signaturesSection = document.querySelector(".signatures");
         signaturesSection.appendChild(newSignature);
